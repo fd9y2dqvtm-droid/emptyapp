@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/boox/Desktop/miyao.p12",
+          "storePassword": "0000001B601206C1C8ECE05FBB520935105E25A605B5DD382CA5F61773C283F2C41D42438FDC83D3E009E8",
+          "keyAlias": "bieming",
+          "keyPassword": "0000001B31BC16D9A677D4C7DFEBCF2646A9CF74B4AFCAECF0FF485EF664EA3EEB75069EC2BF398CCFA6A3",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/boox/Downloads/pfDebug.p7b",
+          "certpath": "/Users/boox/Downloads/certificate.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "6.0.1(21)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
